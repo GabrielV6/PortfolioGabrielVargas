@@ -390,11 +390,6 @@
 	}
 
 
-/* Opcional: Ajustar los botones de la información del portafolio si es necesario */
-    .portfolio-item-info {
-        padding: 10px;
-    }
-	
 	.portfolio-item,
 	.section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
 		margin-bottom: 15px; 
