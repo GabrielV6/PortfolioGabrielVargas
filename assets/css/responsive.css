@@ -358,18 +358,20 @@
 
 	/* Section: Portfolio */
 	
-	.portfolio-item {
-        margin-bottom: 20px; /* Asegura que haya espacio entre los elementos del portafolio */
+    /* Agrega márgenes de alto entre las imágenes */
+    .portfolio-item {
+        margin-top: 15px;   /* Margen superior entre las imágenes */
+        margin-bottom: 15px; /* Margen inferior entre las imágenes */
     }
 	.portfolio-item img {
         width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
         object-fit: cover; /* Asegura que la imagen se recorte de manera uniforme */
     }
-	/* Se asegura de que las columnas se distribuyan adecuadamente en pantallas pequeñas */
+    /* Asegura que todas las columnas tengan espaciado entre las imágenes */
     .section-portfolio .col-xs-6 {
-        padding: 5px; /* Añade un pequeño espacio entre las columnas */
-        width: 100%;  /* Cada columna ocupará todo el ancho disponible */
+        padding: 0; /* Elimina los márgenes laterales */
+        width: 100%;  /* Cada columna ocupa todo el ancho disponible */
     }
 	
 	/* Elimina márgenes innecesarios en pantallas pequeñas para la galería */
