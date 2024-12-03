@@ -368,17 +368,15 @@
     }
 	/* Se asegura de que las columnas se distribuyan adecuadamente en pantallas pequeñas */
     .section-portfolio .col-xs-6 {
-        width: 100%; /* Hace que cada columna ocupe todo el ancho disponible */
-        padding: 0 10px; /* Añade algo de espacio entre las columnas */
+        padding: 5px; /* Añade un pequeño espacio entre las columnas */
+        width: 100%;  /* Cada columna ocupará todo el ancho disponible */
     }
 	
 	/* Elimina márgenes innecesarios en pantallas pequeñas para la galería */
-    .section-portfolio .col-xs-6:nth-child(odd) {
-        padding-right: 10px;
-    }
-	
-	   .section-portfolio .col-xs-6:nth-child(even) {
-        padding-left: 10px;
+    .section-portfolio .col-xs-6:nth-child(odd),
+    .section-portfolio .col-xs-6:nth-child(even) {
+        padding-left: 10px;   /* Asegura el espacio entre columnas */
+        padding-right: 10px;  /* Asegura el espacio entre columnas */
     }
 /*	
 	.section-portfolio .col-xs-6:nth-child(odd) {
@@ -389,6 +387,12 @@
 		padding-left: 7.5px;
 	}
 */
+
+/* Opcional: Ajustar los botones de la información del portafolio si es necesario */
+    .portfolio-item-info {
+        padding: 10px;
+    }
+	
 	.portfolio-item,
 	.section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
 		margin-bottom: 15px; 
