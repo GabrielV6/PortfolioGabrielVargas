@@ -359,19 +359,25 @@
 	/* Section: Portfolio */
 	
     /* Agrega márgenes de alto entre las imágenes */
-    .portfolio-item {
-        margin-top: 15px;   /* Margen superior entre las imágenes */
-        margin-bottom: 15px; /* Margen inferior entre las imágenes */
-    }
+/* Añadir espacio vertical entre las imágenes en el portafolio */
+.portfolio-item {
+    margin-bottom: 15px; /* Margen inferior entre las imágenes */
+}
+
+/* Si necesitas más espacio también puedes añadir margen superior */
+.portfolio-item {
+    margin-top: 15px; /* Margen superior entre las imágenes */
+}
 	.portfolio-item img {
         width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
         object-fit: cover; /* Asegura que la imagen se recorte de manera uniforme */
     }
     /* Asegura que todas las columnas tengan espaciado entre las imágenes */
-    .section-portfolio .col-xs-6 {
-        padding: 0; /* Elimina los márgenes laterales */
-        width: 100%;  /* Cada columna ocupa todo el ancho disponible */
+	.section-portfolio .col-xs-6 {
+		width: 100%; /* Hace que cada columna ocupe todo el ancho disponible */
+		padding: 0px; /* Elimina el padding horizontal */
+		margin-bottom: 15px; /* Añade margen inferior entre las filas de columnas */
     }
 	
 	/* Elimina márgenes innecesarios en pantallas pequeñas para la galería */
