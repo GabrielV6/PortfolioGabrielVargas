@@ -357,6 +357,30 @@
 	}
 
 	/* Section: Portfolio */
+	
+	.portfolio-item {
+        margin-bottom: 20px; /* Asegura que haya espacio entre los elementos del portafolio */
+    }
+	.portfolio-item img {
+        width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: cover; /* Asegura que la imagen se recorte de manera uniforme */
+    }
+	/* Se asegura de que las columnas se distribuyan adecuadamente en pantallas pequeñas */
+    .section-portfolio .col-xs-6 {
+        width: 100%; /* Hace que cada columna ocupe todo el ancho disponible */
+        padding: 0 10px; /* Añade algo de espacio entre las columnas */
+    }
+	
+	/* Elimina márgenes innecesarios en pantallas pequeñas para la galería */
+    .section-portfolio .col-xs-6:nth-child(odd) {
+        padding-right: 10px;
+    }
+	
+	   .section-portfolio .col-xs-6:nth-child(even) {
+        padding-left: 10px;
+    }
+/*	
 	.section-portfolio .col-xs-6:nth-child(odd) {
 		padding-right: 7.5px;
 	}
@@ -364,7 +388,7 @@
 	.section-portfolio .col-xs-6:nth-child(even) {
 		padding-left: 7.5px;
 	}
-
+*/
 	.portfolio-item,
 	.section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
 		margin-bottom: 15px; 
