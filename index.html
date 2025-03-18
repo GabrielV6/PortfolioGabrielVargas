@@ -366,18 +366,7 @@
         </div>
     </div>
 </div>
-<script>
-    // Escuchar el envío del formulario
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evitar que el formulario se envíe de forma tradicional
-        
-        // Mostrar el modal
-        var myModal = new bootstrap.Modal(document.getElementById('messageModal'));
-        myModal.show();
-        
-        this.submit(); // Descomentar esta línea si quieres enviar el formulario realmente
-    });
-</script>
+
 						
     <div class="row">
         <!-- QR de WhatsApp -->
@@ -638,6 +627,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
     <script src="jquery.countTo.min.js"></script>
     <script src="script.js"></script>
-  
+	<script>
+    // Escuchar el envío del formulario
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe de forma tradicional
+        
+        // Mostrar el modal
+        var myModal = new bootstrap.Modal(document.getElementById('messageModal'));
+        myModal.show();
+        
+        this.submit(); // Descomentar esta línea si quieres enviar el formulario realmente
+    });
+</script>
 </body>
 </html>
