@@ -348,6 +348,36 @@
 				</form>
 			</div>
 		</div>
+		
+		<!-- Modal de confirmación -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">¡Mensaje Enviado!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Escuchar el envío del formulario
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe de forma tradicional
+        
+        // Mostrar el modal
+        var myModal = new bootstrap.Modal(document.getElementById('messageModal'));
+        myModal.show();
+        
+        this.submit(); // Descomentar esta línea si quieres enviar el formulario realmente
+    });
+</script>
 						
     <div class="row">
         <!-- QR de WhatsApp -->
