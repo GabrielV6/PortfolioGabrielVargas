@@ -139,6 +139,17 @@
 	h4 {
 		font-size: 20px;
 	}
+/*Formulario */	
+	   .fcontacto {
+        padding: 20px;
+    }
+	
+	    .fcontacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 	/* Buttons */ 
 	.btn {
