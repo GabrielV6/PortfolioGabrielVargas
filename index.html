@@ -317,11 +317,11 @@
 				<h3>Contactenos</h3>
 				<img src="assets/img/lines.svg" class="img-lines" alt="lines">
 			</div>
-	<div class="fcontacto">
+	<div class="col-sm-4">
 			<div class="logito">
 				<img src="assets/img/logo.png" alt="Contactame">
 			</div>
-			<form id="contactForm" action="https://formsubmit.co/ecgabrielec@gmail.com" method="POST">
+			<form id="contactForm" action="https://formsubmit.co/ecgabrielec@hotmail.com" method="POST">
 				<div class="row">
 					<div class="col-md-6">
 						<label>Tu nombre:</label>
@@ -342,25 +342,6 @@
 				<input type="hidden" name="_next" value="https://gabrielv6.github.io/PortfolioGabrielVargas/#">
 				<input type="hidden" name="_captcha" value="false">
 
-				<!-- Modal de confirmación -->
-				<div id="messageModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="messageModalLabel">¡Mensaje Enviado!</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-								<p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-							</div>
-						</div>
-					</div>
-				</div>
 			</form>
 		</div>
 
@@ -639,24 +620,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
     <script src="jquery.countTo.min.js"></script>
     <script src="script.js"></script>
-	<script>
-<script>
-    // Mostrar el modal cuando se haga submit
-    $('#contactForm').submit(function(event) {
-        event.preventDefault(); // Evitar el envío inmediato del formulario
 
-        // Mostrar el modal de confirmación
-        $('#messageModal').modal('show'); // Usar Bootstrap para mostrar el modal
-
-        // Opcional: Si quieres enviar el formulario después de que el modal se cierre
-        // Agregar un evento al modal para enviarlo cuando el modal se cierre
-        $('#messageModal').on('hidden.bs.modal', function () {
-            // Enviar el formulario después de que el modal se cierre
-            $('#contactForm')[0].submit(); // Esto enviará el formulario
-        });
-    });
-</script>
-
-</script>
 </body>
 </html>
