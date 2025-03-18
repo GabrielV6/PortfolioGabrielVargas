@@ -317,40 +317,52 @@
 				<h3>Contactenos</h3>
 				<img src="assets/img/lines.svg" class="img-lines" alt="lines">
 			</div>
-			<div class="fcontacto">
-				<div class="logito">
-					<img src="assets/img/logo.png" alt="Contactame">
+	<div class="fcontacto">
+			<div class="logito">
+				<img src="assets/img/logo.png" alt="Contactame">
+			</div>
+			<form id="contactForm" action="https://formsubmit.co/ecgabrielec@gmail.com" method="POST">
+				<div class="row">
+					<div class="col-md-6">
+						<label>Tu nombre:</label>
+						<input type="text" name="name" id="name" class="form-control" required>
+					</div>
+					<div class="col-md-6">
+						<label>Tu Email:</label>
+						<input type="email" name="email" id="email" class="form-control" required>
+					</div>
 				</div>
-				<form action="https://formsubmit.co/a866223b49deb3e2eebe5455040eb4a9" method="POST" />
-					<div class="row">
-					
-						<div class="col-md-6">
-							<label>Tu nombre:</label>
-							<input type="text" name="name" id="name" class="form-control">
-						</div>
+				<label>Asunto:</label>
+				<input type="text" name="asunto" id="asunto" class="form-control" required>
+				<label>Tu Mensaje:</label>
+				<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control" required></textarea>
 
-						<div class="col-md-6">
-							<label>Tu Email:</label>
-							<input type="text" name="email" id="email" class="form-control">
+				<!-- Botón de envío del formulario -->
+				<input type="submit" class="btn btn-fill" value="Enviar">
+				<input type="hidden" name="_next" value="https://gabrielv6.github.io/PortfolioGabrielVargas/#">
+
+				<!-- Modal de confirmación -->
+				<div id="messageModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="messageModalLabel">¡Mensaje Enviado!</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							</div>
 						</div>
 					</div>
-					<label>Asunto:</label>
-					<input type="text" name="asunto" id="asunto" class="form-control">
-					<label>Tu Mensaje:</label>
-					<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control"></textarea>
-					
-				<!--	
-					<input type="submit" class="btn btn-fill" target="_blank" value="Enviar"> 
-				-->
-				
-				<a href="#" data-toggle="modal" data-target="#popup">
-					<input type="submit" data-toggle="modal" class="btn btn-fill" target="_blank" value="Enviar">
-				</a>
-					<input type="hidden" name="_next" value="https://gabrielv6.github.io/PortfolioGabrielVargas/#"> 
-					<input type="hidden" name="_captcha" value="false">
-					
-				</form>
-			</div>
+				</div>
+			</form>
+		</div>
+
 		</div>
 						
     <div class="row">
