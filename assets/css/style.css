@@ -316,9 +316,9 @@ html, body {
 }
 
 .hero img {
-	max-width: 100%;
-	width: 100%;
+	width: 150%;
 	height: auto;
+	max-height: 200vh;
 	object-fit: contain;
 }
 
