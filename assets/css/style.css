@@ -300,6 +300,12 @@ html, body {
     height: 600px;
 }
 
+.hero img {
+    max-width: 130%;
+    height: auto;
+    display: inline-block;
+}
+
 /* SITEMAIN
 ================================================== */
 .site-main {
